@@ -1,0 +1,88 @@
+<% include ../partials/header.ejs %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <h1><%= title %></h1>
+            <form class="form" method="POST">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title"
+                placeholder="Book Name" name="title"
+
+                <% if (title == "Edit Book"){ %>
+                
+                value="<%= books.title %>" 
+
+                <% } else {%>
+                
+                  required>
+
+                <% } %>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="price">Price</label>
+                <input type="text" class="form-control" id="price"
+                placeholder="Book Price" name="price" 
+
+               <% if (title == "Edit Book"){ %>
+                
+                value="<%= books.price %>" 
+
+                <% } else {%>
+                
+                  required>
+                  
+                <% } %>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author"
+                placeholder="Book Author" name="author"  
+
+                  <% if (title == "Edit Book"){ %>
+                
+                value="<%= books.author %>" 
+
+                <% } else {%>
+                
+                  required>
+                  
+                <% } %>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="genre">Genre</label>
+                <input type="text" class="form-control" id="genre"
+                placeholder="Book Genre" name="genre"
+
+                <% if (title == "Edit Book"){ %>
+                
+                value="<%= books.genre %>" 
+
+                <% } else {%>
+                
+                  required>
+                  
+                <% } %>
+
+              </div>           
+
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/books" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+            </form>
+        </div>
+      </div>
+    </div>
+
+<% include ../partials/footer.ejs %>
