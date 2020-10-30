@@ -1,3 +1,7 @@
+// Student name: Osman Tahir
+// Student # 301075554
+// Cours: comp229-Web app development - Mid-Term Test
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();

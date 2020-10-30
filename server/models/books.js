@@ -1,3 +1,7 @@
+// Student name: Osman Tahir
+// Student # 301075554
+// Cours: comp229-Web app development - Mid-Term Test
+
 let mongoose = require('mongoose');
 
 // create a model class
